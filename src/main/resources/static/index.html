@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">
+            <div class="mb-4  justify-content-start align-items-center text-center">
+
+                <h4 > <i class="bi center" ></i> &nbsp; LIBRO DE RECLAMACIONES</h4>
+
+            </div>
+            <div class="mb-1">
+                <form id="">
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Establecimiento</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="mb-2 d-flex justify-content-between row">
+                        <div class="col">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre"
+                                required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Apellido Materno" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Apellido Materno" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                       
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" name="Direccion" id="direccion"
+                            placeholder="Direccion" required>
+                        <div class="direccion text-danger"></div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo"
+                            placeholder="ej: gpmcheco@mail.com" required>
+                        <div class="correo text-danger"></div>
+
+                    </div>
+                    <div class="mb-2 d-flex justify-content-between row">
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tipo de Documentacion</option>
+                                <option value="1">DNI</option>
+                                <option value="2">Carnet de Extranjeria</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="int" class="form-control" name="" id="dni"
+                                placeholder="Numero de Documentacion" required>
+                            <div class=" text-danger"></div>
+                        </div>
+                       
+                    </div>
+                    <div class="mb-2 d-flex justify-content-between row">
+                        <div class="col">
+                            <input type="text" class="form-control" name="" id="nombre" placeholder="Telefono"
+                                required>
+                            <div class=" text-danger "></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Edad" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="mb-2">
+                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
